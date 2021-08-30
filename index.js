@@ -7,6 +7,8 @@ const routes = require('./routes');
 const app = express();
 const cors = require('cors');
 
+app.use(express.static(__dirname + '/front'));
+
 
 mongoose.connect(process.env.MONGO_URL,{
 });
@@ -15,11 +17,10 @@ app.use(cors())
 app.use(express.json());
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes);
-app.listen (process.env.PORT || 5000)
-app.listen('5000',() =>{
-    console.log('rodando na porta 5000');
-
-
-
+const PORT = process.env.PORT || 8081
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na url http://localhost:8081`);
 });
+
+
 
