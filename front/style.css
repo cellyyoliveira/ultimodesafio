@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#titulo{
+    text-align: center;
+    justify-content:center; 
+    font-family: sans-serif;
+    color: 	rgb(59, 170, 59);
+    margin-left: 1%;
+
+}
+/* 
+.container {
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+
+
+
+body{
+    text-align: center;
+    border: 2px solid rgb(255, 239, 255);
+    border-radius: 5px 5px 0 0;
+    padding: 45px 20px 20 px;
+    position: relative;
+    background-color: #F5FFFA;
+    
+}
+
+input , select, button {
+    border-radius: 5px ;
+}
+
+.campo{
+
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    /* padding: 3px 8px; */
+    /* top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px; */
+}
+
+.campo label{
+    margin-bottom: 5em;
+    color:#8d0092;
+    /* display: flex; */
+}
+
+/* .campo input [type="text"], .campo input[type="email"], .campo select{ */
+    .campo input, .campo select{
+    padding: 0.1em ;
+    border: 1 px solid white;
+    /* box-shadow: 2px 2px 2px rgba(199, 102, 102, 0.2); */
+    /* display: inline-flexbox; */
+}
+
+.campo select option{
+    padding-right: 0.2em;
+}
+
+.campo input:focus, .campo select:focus {
+    background: white ;
+}
+
+.botao{
+    font-size: 1em;
+    background: white;
+    border: 3;
+    margin-bottom: 1em;
+    color:slateblue;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    margin-right: 5%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.botao:hover{
+    background: whitesmoke;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2) ;
+    text-shadow: none;
+}
+
+footer {
+    color: var(--primary-color);
+}

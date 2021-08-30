@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title> JOBSnet </title>
+
+</head>
+<header>
+        <div>
+            <img src="imagens/Buarque & Patrício(3).png" width="10% alt="JOBSnet">
+        </div>
+</header>
+<body>
+
+   <div class="campo"> 
+
+        <h1 id="titulo">Cadastre suas informações</h1>
+
+   </div>
+   <form name="formulario" id="container" onchange="Formulario()">
+    <form method="POST" onchange="Formulario()" autocomplete="off"></form>
+        <div class="campo"> 
+            <label for="nome"> Nome Completo </label><span class="preenchimentoObrigatorio">*</span>
+            <input type ="text" nome = "nome" id="nome" size="30">
+            <!-- <input type="text" id="nome" class="text required" value="" placeholder="Nome Completo" name="nome"> -->
+
+
+        </div>
+   
+        <div class="campo">
+            <label for="cargo">Cargo Pretendido</label>
+            <input type="text" nome="cargo" id="cargo" size="30">
+        </div>
+
+        <div class="campo">
+            <label for="dia">Data de nascimento</label><span class="preenchimentoObrigatorio">*</span>
+            <input type="date" name="dia" id="dia" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+        </div>
+        <div class="campo">
+            <label for="estadocivil">Estado Civil</label>
+              <select id = "estadocivil">
+                <option selected disabled value = ""> Selecione </option>
+                <option value="0">Solteiro</option>
+                <option value="1">Casado</option>
+                </select>  
+        </div>
+        <div class="campo">
+            <label for="inputgenero">Gênero</label>    
+            <select name="genero" class="form-control" id="inputgenero">
+                <option selected disabled value = ""> Selecione </option>
+                <option value="0">Feminino</option>
+                <option value="1">Masculino</option>
+                <option value="1">Prefere não informar</option>
+                </select>
+        </div>
+         <div class="campo">
+            <label for="cep"> CEP </label><span class="preenchimentoObrigatorio">*</span>
+            <input type="text" id="cep">
+        </div>
+
+        <div class="campo">
+            <label for="endereco">Endereço</label><span class="preenchimentoObrigatorio">*</span>
+            <input type="text" name="endereco" id="endereco">
+        </div>
+        <div class="campo">
+            <label for="bairro">Bairro</label><span class="preenchimentoObrigatorio">*</span>
+            <input type="text" name="bairro" id="bairro">
+        </div>
+        <div class="campo">
+            <label for="cidade">Cidade</label><span class="preenchimentoObrigatorio">*</span>
+            <input type="text" name="cidade" id="cidade">
+        </div>
+       
+        <div class="campo">
+            <label for="celular">Celular</label><span class="preenchimentoObrigatorio">*</span>
+            <input type="number" name="celular" id="celular">
+        </div>
+        <div class="campo">
+            <label for="email">Email</label><span class="preenchimentoObrigatorio">*</span>
+            <input type="email" name="enail" id="email">
+            
+        </div>
+    
+        <div class="campo">
+
+            <br>
+            <h2 id="titulo">Documentos</h2>
+        
+    
+        </div>
+        <div class="campo">
+            <label for="identidade">Identidade</label><span class="preenchimentoObrigatorio">*</span>
+            <input type="number" name="identidade" id="identidade">
+        </div> 
+        <div class="campo">
+            <label for="cpf">CPF</label><span class="preenchimentoObrigatorio">*</span>
+            <input type="number" name="cpf" id="cpf">
+        </div>
+        <div class="campo">
+            <label for="carro">Possui Veículo</label>   
+            <select name="carro" class="form-control" id="carro">
+                <option selected disabled value = ""> Selecione </option>
+                <option value="0">Não</option>
+                <option value="1">Sim</option>
+                </select> 
+            </div>
+        <div class="campo">
+            <label for="habilitacao">Habilitação</label>   
+            <select name="habilitacao" class="form-control" id="habilitacao">
+                <option selected disabled value = ""> Selecione </option>
+                <option value="0">Não</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">AB</option>
+                </select>
+            </div>
+
+            
+        <div><button type="submit" id="enviar" onclick="criarCandidato()">Envie seus dados</button></div>
+
+            <br>   
+            <br>
+            <br>
+
+            
+        </form>
+        <footer> 
+            <p id="titulo">Desenvolvido por <a href="https://www.linkedin.com/in/marcelly-oliveira-moreira/" id="linkedin"> Marcelly Oliveira </a> durante o
+                Start Tech da Gama Academy.</p>
+        </footer>
+     
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>

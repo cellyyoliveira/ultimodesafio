@@ -1,0 +1,104 @@
+{
+    "openapi": "3.0.0",
+
+    "info": {
+        "title": "API do back",
+        "description":"essa é a API do back",
+        "version": "0.0.1"
+    },
+
+    "servers": [
+        {
+        "url": "http://localhost:5000",
+        "description": "ambiente de desenvolvimento"
+        }
+    ],
+
+    "paths": {
+        "/register": {
+            "post": {
+                "sumary": "Cadastro de candidato",
+                "description": "Rota de cadastro, recebe: nome, cargopretendido, endereco,email, identidade, cpf, carro",
+                "tags": ["candidato"],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "cargo": {
+                                        "type": "string" 
+                                    },
+                                    "dia":{
+                                        "type": "number"
+                                    },
+                                    "estadocivil": {
+                                        "type": "string"
+                                    },
+                                    "inputgenero": {
+                                        "type": "string"
+                                    },
+                                    "cep": {
+                                        "type": "number" 
+                                    },
+                                    "endereco": {
+                                        "type": "string"
+                                    },
+                                    "bairro": {
+                                        "type": "string"
+                                    },
+                                    "cidade": {
+                                        "type": "string"
+                                    },
+                                    "celular": {
+                                        "type": "number"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "identidade": {
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "type": "number"
+                                    },
+                                    "carro": {
+                                        "type": "string"
+                                    },
+                                    "habilitacao": {
+                                        "type": "string"
+                                    }
+                                }
+                            },   
+                            "examples": {
+                                "candidado": {
+                                    "value": {
+                                    "nome": "Jose Adao",
+                                    "cargo": "Desenvolvedor",
+                                    "dia": "07111990",
+                                    "estadocivil": "Solteiro",
+                                    "inputgenero": "Masculino",
+                                    "cep": "90220121",
+                                    "endereco": "Sao Carlos, 200",
+                                    "bairro":"Floresta",
+                                    "cidade": "Porto Alegre",
+                                    "celular":"982828783",
+                                    "email":"zeadao@gmail.com",
+                                    "identidade":"3098673660",
+                                    "cpf":"02570040090",
+                                    "carro":"Não",
+                                    "habilitacao":"A"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+        
+    }
+
+}
